@@ -46,5 +46,7 @@ pub fn build(b: *std.Build) void {
     lib.addIncludePath(.{ .path = "include" });
     lib.addCSourceFiles(.{ .files = &.{"src/civetweb.c"}, .flags = &.{} });
     lib.linkLibC();
+
+    lib.installHeader("include/civetweb.h", "civetweb.h");
     b.installArtifact(lib);
 }
