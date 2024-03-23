@@ -1,0 +1,6 @@
+.{
+    .name = "civetweb",
+    .version = "1.16.0",
+    .dependencies = .{},
+    .paths = .{ "build.zig", "build.zig.zon", "include", "src" },
+}
